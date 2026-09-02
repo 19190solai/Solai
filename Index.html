@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12ஆம் வகுப்பு தமிழ் - இயல் 1 வினாடி வினா</title>
+
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial, "Noto Sans Tamil", sans-serif;
+            background: #f3f6fb;
+            color: #222;
+        }
+
+        .container {
+            width: 94%;
+            max-width: 760px;
+            margin: 20px auto;
+            background: white;
+            padding: 22px;
+            border-radius: 16px;
+            box-shadow: 0 4px 18px rgba(0,0,0,.12);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 26px;
+            margin: 5px 0 8px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 21px;
+        }
+
+        .info-box {
+            background: #eef5ff;
+            padding: 16px;
+            border-radius: 12px;
+            margin: 15px 0;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 12px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            border: 1px solid #bbb;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            border: none;
+            border-radius: 9px;
+            padding: 12px 20px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        #startBtn, #nextBtn, #submitBtn {
+            background: #198754;
+            color: white;
+        }
+
+        #timer {
+            text-align: center;
+            font-size: 21px;
+            font-weight: bold;
+            padding: 10px;
+            background: #fff3cd;
+            border-radius: 9px;
+            margin: 15px 0;
+        }
+
+        #questionText, .question {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        .option, .options label {
+            display: block;
+            background: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 9px;
+            padding: 12px;
+            margin: 10px 0;
+            cursor: pointer;
+            font-weight: normal;
+            line-height: 1.5;
+        }
+
+        .option:hover, .options label:hover {
+            background: #eef5ff;
+        }
+
+        #result, #wrong-answers {
+            margin-top: 20px;
+            padding: 16px;
+            border-radius: 12px;
+            background: #f1f8f4;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📚 12ஆம் வகுப்பு தமிழ்</h1>
+    <h2>இயல் 1 - வினாடி வினா</h2>
+
+    <!-- மாணவர் விவரங்கள் -->
+    <div id="student-section">
+        <div class="info-box">
+            <label for="studentName">மாணவர் பெயர்</label>
+            <input type="text" id="studentName" placeholder="மாணவர் பெயரை உள்ளிடுக">
+
+            <label for="studentExamNo">தேர்வு எண்</label>
+            <input type="text" id="studentExamNo" placeholder="தேர்வு எண்ணை உள்ளிடுக">
+
+            <label for="studentClass">வகுப்பு</label>
+            <input type="text" id="studentClass" value="12ஆம் வகுப்பு" placeholder="வகுப்பு">
+
+            <div class="center">
+                <button id="startBtn" type="button" onclick="startQuiz()">▶️ தேர்வைத் தொடங்குக</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- வினாடி வினா -->
+    <div id="quiz-section" class="hidden">
+
+        <div id="timer">⏱️ நேரம்: <span id="time">10:00</span></div>
+
+        <div id="quizContainer">
+            <div id="questionText"></div>
+            <div id="options" class="options"></div>
+        </div>
+
+        <div class="center">
+            <button id="nextBtn" type="button" onclick="nextQuestion()">அடுத்த வினா ➡️</button>
+            <button id="submitBtn" type="button" onclick="submitQuiz()" class="hidden">✅ தேர்வை முடிக்கவும்</button>
+        </div>
+    </div>
+
+    <!-- முடிவு -->
+    <div id="result" class="hidden">
+        <h2>🎉 தேர்வு முடிவு</h2>
+        <div id="score"></div>
+
+        <div id="wrong-answers">
+            <h3>❌ தவறான விடைகளின் சரியான பதில்கள்</h3>
+            <div id="wrong-list"></div>
+        </div>
+
+        <div class="center">
+            <button type="button" onclick="location.reload()">🔄 மீண்டும் தேர்வு எழுதுக</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- 12ஆம் வகுப்பு இயல் 1 JavaScript -->
+<script src="12th1stiyal.js"></script>
+
+</body>
+</html>
