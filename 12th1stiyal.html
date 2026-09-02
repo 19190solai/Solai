@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12ஆம் வகுப்பு தமிழ் - இயல் 1 வினாடி வினா</title>
+    <link rel="stylesheet" href="12th1stiyal.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📚 12ஆம் வகுப்பு தமிழ்</h1>
+    <h2>இயல் 1 - வினாடி வினா</h2>
+
+    <!-- மாணவர் விவரங்கள் -->
+    <div id="student-info">
+        <label for="studentName">மாணவர் பெயர்:</label>
+        <input type="text" id="studentName" placeholder="மாணவர் பெயரை உள்ளிடவும்">
+
+        <label for="studentClass">வகுப்பு:</label>
+        <input type="text" id="studentClass" value="12ஆம் வகுப்பு">
+
+        <label for="examNo">தேர்வு எண்:</label>
+        <input type="text" id="examNo" placeholder="தேர்வு எண்ணை உள்ளிடவும்">
+
+        <button type="button" onclick="startQuiz()">▶️ தேர்வை தொடங்கு</button>
+    </div>
+
+    <!-- தேர்வு பகுதி -->
+    <div id="quiz-section" style="display:none;">
+
+        <div id="timer">⏱️ நேரம்: <span id="time">20:00</span></div>
+
+        <div id="quiz-container"></div>
+
+        <button type="button" onclick="submitQuiz()">✅ தேர்வை முடிக்கவும்</button>
+    </div>
+
+    <!-- முடிவு பகுதி -->
+    <div id="result-section" style="display:none;">
+
+        <h2>🎉 தேர்வு முடிந்தது!</h2>
+
+        <div id="score"></div>
+
+        <div id="wrong-answers">
+            <h3>❌ தவறான விடைகளின் சரியான பதில்கள்</h3>
+            <div id="wrong-list"></div>
+        </div>
+
+        <button type="button" onclick="location.reload()">
+            🔄 மீண்டும் தேர்வு எழுதுக
+        </button>
+
+    </div>
+
+</div>
+
+<script src="12th1stiyal.js"></script>
+
+</body>
+</html>
