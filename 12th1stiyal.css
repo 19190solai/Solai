@@ -162,8 +162,25 @@ button {
     button { width: 100%; margin: 5px 0; }
     .nav-buttons button { width: 100%; }
 }
+.next-button {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
 
+.navigation {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
 @media print {
     body { background: white; }
     #student-section, #quiz-section, #printBtn, #restartBtn { display: none !important; }
     .quiz-container { width: 100%; }
+    
