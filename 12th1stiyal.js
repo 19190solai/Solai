@@ -1,542 +1,392 @@
-// ======================================================
-// 12ஆம் வகுப்பு தமிழ் - முதல் இயல்
-// 40 வினாக்கள் கொண்ட வினாடி வினா
-// ======================================================
-
 const questions = [
-
     {
-        question: "தமிழின் தொன்மையான இலக்கண நூல் எது?",
-        options: ["தொல்காப்பியம்", "நன்னூல்", "யாப்பருங்கலம்", "வீரசோழியம்"],
+        question: "‘அன்னை மொழியே’ கவிதையை இயற்றியவர் யார்?",
+        options: ["பெருஞ்சித்திரனார்", "பாரதியார்", "பாரதிதாசன்", "நாமக்கல் கவிஞர்"],
         answer: 0
     },
-
     {
-        question: "தொல்காப்பியத்தின் ஆசிரியர் யார்?",
-        options: ["தொல்காப்பியர்", "பவணந்தி முனிவர்", "இளங்கோவடிகள்", "சீத்தலைச் சாத்தனார்"],
+        question: "தமிழ்மொழியின் சிறப்பைப் பாடல்களின் நோக்கம் என்ன?",
+        options: ["தமிழின் பெருமையை உணர்த்துதல்", "வரலாற்றை மறத்தல்", "பிறமொழியைப் புகழ்தல்", "அறிவியலை மறுத்தல்"],
         answer: 0
     },
-
+    {
+        question: "மொழி எதற்கான கருவி?",
+        options: ["கருத்துப் பரிமாற்றம்", "விளையாட்டு", "பயணம்", "உணவு"],
+        answer: 0
+    },
+    {
+        question: "தமிழ்மொழி எவ்வகை மொழி?",
+        options: ["செம்மொழி", "வட்டார மொழி", "குறியீட்டு மொழி", "அயல்மொழி"],
+        answer: 0
+    },
+    {
+        question: "தமிழின் தொன்மையை விளக்கும் இலக்கண நூல் எது?",
+        options: ["தொல்காப்பியம்", "சிலப்பதிகாரம்", "மணிமேகலை", "கம்பராமாயணம்"],
+        answer: 0
+    },
+    {
+        question: "தமிழின் பழமையான இலக்கியத் தொகுப்பு எது?",
+        options: ["சங்க இலக்கியம்", "நவீன இலக்கியம்", "மேலை இலக்கியம்", "அறிவியல் இலக்கியம்"],
+        answer: 0
+    },
+    {
+        question: "தமிழின் உயிரெழுத்துகள் எத்தனை?",
+        options: ["12", "18", "216", "247"],
+        answer: 0
+    },
+    {
+        question: "தமிழின் மெய்யெழுத்துகள் எத்தனை?",
+        options: ["18", "12", "216", "247"],
+        answer: 0
+    },
+    {
+        question: "உயிர், மெய் சேர்ந்து உருவாகுபவை எவை?",
+        options: ["உயிர்மெய் எழுத்துகள்", "ஆய்த எழுத்து", "உயிரெழுத்துகள்", "மெய்யெழுத்துகள்"],
+        answer: 0
+    },
+    {
+        question: "தமிழில் ஆய்த எழுத்து எது?",
+        options: ["ஃ", "அ", "க்", "ள"],
+        answer: 0
+    },
+    {
+        question: "தமிழில் மொத்த எழுத்துகள் எத்தனை?",
+        options: ["247", "216", "30", "31"],
+        answer: 0
+    },
+    {
+        question: "உயிர்மெய் எழுத்துகள் எத்தனை?",
+        options: ["216", "247", "30", "18"],
+        answer: 0
+    },
+    {
+        question: "‘அ’ எவ்வகை எழுத்து?",
+        options: ["உயிரெழுத்து", "மெய்யெழுத்து", "ஆய்த எழுத்து", "உயிர்மெய்"],
+        answer: 0
+    },
+    {
+        question: "‘க்’ எவ்வகை எழுத்து?",
+        options: ["மெய்யெழுத்து", "உயிரெழுத்து", "ஆய்த எழுத்து", "உயிர்மெய்"],
+        answer: 0
+    },
+    {
+        question: "வல்லின எழுத்துகள் எத்தனை?",
+        options: ["6", "12", "18", "216"],
+        answer: 0
+    },
+    {
+        question: "மெல்லின எழுத்துகள் எத்தனை?",
+        options: ["6", "12", "18", "216"],
+        answer: 0
+    },
+    {
+        question: "இடையின எழுத்துகள் எத்தனை?",
+        options: ["6", "12", "18", "216"],
+        answer: 0
+    },
+    {
+        question: "‘க, ச, ட, த, ப, ற’ எந்த இன எழுத்துகள்?",
+        options: ["வல்லினம்", "மெல்லினம்", "இடையினம்", "உயிரினம்"],
+        answer: 0
+    },
+    {
+        question: "‘ங, ஞ, ண, ந, ம, ன’ எந்த இன எழுத்துகள்?",
+        options: ["மெல்லினம்", "வல்லினம்", "இடையினம்", "உயிர்"],
+        answer: 0
+    },
+    {
+        question: "‘ய, ர, ல, வ, ழ, ள’ எந்த இன எழுத்துகள்?",
+        options: ["இடையினம்", "வல்லினம்", "மெல்லினம்", "உயிர்"],
+        answer: 0
+    },
+    {
+        question: "தமிழின் முதல் இலக்கண நூல் எது?",
+        options: ["தொல்காப்பியம்", "நன்னூல்", "யாப்பருங்கலம்", "புறப்பொருள் வெண்பாமாலை"],
+        answer: 0
+    },
     {
         question: "தொல்காப்பியம் எத்தனை அதிகாரங்களைக் கொண்டது?",
-        options: ["2", "3", "4", "5"],
-        answer: 1
-    },
-
-    {
-        question: "தொல்காப்பியத்தின் மூன்று அதிகாரங்கள் யாவை?",
-        options: [
-            "எழுத்து, சொல், பொருள்",
-            "அகம், புறம், யாப்பு",
-            "எழுத்து, யாப்பு, அணி",
-            "சொல், அணி, பொருள்"
-        ],
+        options: ["3", "2", "5", "10"],
         answer: 0
     },
-
+    {
+        question: "தொல்காப்பியத்தின் அதிகாரங்கள் யாவை?",
+        options: ["எழுத்து, சொல், பொருள்", "அகம், புறம், திணை", "இயல், இசை, நாடகம்", "அறம், பொருள், இன்பம்"],
+        answer: 0
+    },
     {
         question: "தொல்காப்பியத்தின் முதல் அதிகாரம் எது?",
-        options: ["சொல்லதிகாரம்", "பொருளதிகாரம்", "எழுத்ததிகாரம்", "அணியதிகாரம்"],
-        answer: 2
+        options: ["எழுத்ததிகாரம்", "சொல்லதிகாரம்", "பொருளதிகாரம்", "யாப்பதிகாரம்"],
+        answer: 0
     },
-
     {
         question: "தொல்காப்பியத்தின் இரண்டாவது அதிகாரம் எது?",
-        options: ["எழுத்ததிகாரம்", "சொல்லதிகாரம்", "பொருளதிகாரம்", "யாப்பதிகாரம்"],
-        answer: 1
+        options: ["சொல்லதிகாரம்", "எழுத்ததிகாரம்", "பொருளதிகாரம்", "அணியதிகாரம்"],
+        answer: 0
     },
-
     {
         question: "தொல்காப்பியத்தின் மூன்றாவது அதிகாரம் எது?",
-        options: ["எழுத்ததிகாரம்", "சொல்லதிகாரம்", "பொருளதிகாரம்", "அணியதிகாரம்"],
-        answer: 2
+        options: ["பொருளதிகாரம்", "சொல்லதிகாரம்", "எழுத்ததிகாரம்", "யாப்பதிகாரம்"],
+        answer: 0
     },
-
     {
-        question: "தமிழில் உயிரெழுத்துகளின் எண்ணிக்கை எத்தனை?",
-        options: ["10", "12", "18", "216"],
-        answer: 1
-    },
-
-    {
-        question: "தமிழில் மெய்யெழுத்துகளின் எண்ணிக்கை எத்தனை?",
-        options: ["12", "18", "216", "247"],
-        answer: 1
-    },
-
-    {
-        question: "தமிழில் உயிர்மெய்யெழுத்துகளின் எண்ணிக்கை எத்தனை?",
-        options: ["18", "216", "247", "12"],
-        answer: 1
-    },
-
-    {
-        question: "தமிழ் எழுத்துகளின் மொத்த எண்ணிக்கை எத்தனை?",
-        options: ["216", "247", "246", "238"],
-        answer: 1
-    },
-
-    {
-        question: "குறில் எழுத்துகளின் எண்ணிக்கை எத்தனை?",
+        question: "குறில் எழுத்துகள் எத்தனை?",
         options: ["5", "7", "12", "18"],
         answer: 0
     },
-
     {
-        question: "நெடில் எழுத்துகளின் எண்ணிக்கை எத்தனை?",
-        options: ["5", "7", "12", "18"],
+        question: "நெடில் எழுத்துகள் எத்தனை?",
+        options: ["7", "5", "12", "18"],
         answer: 0
     },
-
     {
-        question: "வல்லின எழுத்துகள் எவை?",
-        options: [
-            "க ச ட த ப ற",
-            "ங ஞ ண ந ம ன",
-            "ய ர ல வ ழ ள",
-            "அ ஆ இ ஈ உ ஊ"
-        ],
+        question: "குறிலின் மாத்திரை அளவு என்ன?",
+        options: ["1 மாத்திரை", "2 மாத்திரை", "3 மாத்திரை", "அரை மாத்திரை"],
         answer: 0
     },
-
     {
-        question: "மெல்லின எழுத்துகள் எவை?",
-        options: [
-            "க ச ட த ப ற",
-            "ங ஞ ண ந ம ன",
-            "ய ர ல வ ழ ள",
-            "அ ஆ இ ஈ உ ஊ"
-        ],
-        answer: 1
-    },
-
-    {
-        question: "இடையின எழுத்துகள் எவை?",
-        options: [
-            "க ச ட த ப ற",
-            "ங ஞ ண ந ம ன",
-            "ய ர ல வ ழ ள",
-            "அ ஆ இ ஈ உ ஊ"
-        ],
-        answer: 2
-    },
-
-    {
-        question: "ஆய்த எழுத்து எது?",
-        options: ["அ", "ஃ", "க்", "ஔ"],
-        answer: 1
-    },
-
-    {
-        question: "ஆய்த எழுத்தின் வேறு பெயர் என்ன?",
-        options: ["முப்புள்ளி", "ஒற்றெழுத்து", "உயிரெழுத்து", "மெய்யெழுத்து"],
+        question: "நெடிலின் மாத்திரை அளவு என்ன?",
+        options: ["2 மாத்திரை", "1 மாத்திரை", "3 மாத்திரை", "அரை மாத்திரை"],
         answer: 0
     },
-
     {
-        question: "தமிழில் முதன்மையான எழுத்து வகைகள் எவை?",
-        options: [
-            "உயிர், மெய்",
-            "குறில், நெடில்",
-            "வல்லினம், மெல்லினம்",
-            "அகம், புறம்"
-        ],
+        question: "ஆய்த எழுத்தின் மாத்திரை அளவு என்ன?",
+        options: ["அரை மாத்திரை", "1 மாத்திரை", "2 மாத்திரை", "3 மாத்திரை"],
         answer: 0
     },
-
     {
-        question: "சுட்டெழுத்துகள் எத்தனை வகைப்படும்?",
-        options: ["2", "3", "4", "5"],
-        answer: 1
-    },
-
-    {
-        question: "அகச்சுட்டு என்பதற்கு எடுத்துக்காட்டு எது?",
-        options: ["அவன்", "இவன்", "அந்த", "எந்த"],
-        answer: 1
-    },
-
-    {
-        question: "புறச்சுட்டு என்பதற்கு எடுத்துக்காட்டு எது?",
-        options: ["இவன்", "இது", "அவன்", "இங்கு"],
-        answer: 2
-    },
-
-    {
-        question: "வினா எழுத்துகள் எத்தனை?",
-        options: ["5", "6", "7", "8"],
-        answer: 2
-    },
-
-    {
-        question: "வினா எழுத்துகளுள் ஒன்று எது?",
-        options: ["அ", "எ", "க", "த"],
-        answer: 1
-    },
-
-    {
-        question: "ஒரு பொருளின் பெயரை உணர்த்தும் சொல் எது?",
-        options: ["பெயர்ச்சொல்", "வினைச்சொல்", "இடைச்சொல்", "உரிச்சொல்"],
+        question: "குறில் உயிரெழுத்துகள் எவை?",
+        options: ["அ, இ, உ, எ, ஒ", "ஆ, ஈ, ஊ, ஏ, ஓ", "அ, ஆ, இ, ஈ, உ", "எ, ஏ, ஒ, ஓ, ஔ"],
         answer: 0
     },
-
     {
-        question: "செயலைக் குறிக்கும் சொல் எது?",
-        options: ["பெயர்ச்சொல்", "வினைச்சொல்", "உரிச்சொல்", "இடைச்சொல்"],
-        answer: 1
-    },
-
-    {
-        question: "பெயர்ச்சொல்லின் பண்பை விளக்கும் சொல் எது?",
-        options: ["வினைச்சொல்", "உரிச்சொல்", "இடைச்சொல்", "பெயர்ச்சொல்"],
-        answer: 1
-    },
-
-    {
-        question: "பெயர்ச்சொல்லுக்கும் வினைச்சொல்லுக்கும் இடையில் நின்று பொருள் தருவது எது?",
-        options: ["உரிச்சொல்", "இடைச்சொல்", "பெயர்ச்சொல்", "வினைச்சொல்"],
-        answer: 1
-    },
-
-    {
-        question: "ஒரு சொல்லின் அடிப்படை வடிவம் எவ்வாறு அழைக்கப்படுகிறது?",
-        options: ["பகுதி", "விகுதி", "இடைநிலை", "சந்தி"],
+        question: "நெடில் உயிரெழுத்துகள் எவை?",
+        options: ["ஆ, ஈ, ஊ, ஏ, ஐ, ஓ, ஔ", "அ, இ, உ, எ, ஒ", "அ, ஆ, இ, ஈ, உ", "க, ச, ட, த, ப, ற"],
         answer: 0
     },
-
     {
-        question: "வினைச்சொல்லின் காலத்தை உணர்த்துவது எது?",
-        options: ["பகுதி", "விகுதி", "இடைநிலை", "உருபு"],
-        answer: 2
+        question: "‘ஐ’ எவ்வகை உயிரெழுத்து?",
+        options: ["நெடில்", "குறில்", "மெய்", "ஆய்தம்"],
+        answer: 0
     },
-
     {
-        question: "தமிழில் காலங்கள் எத்தனை?",
-        options: ["2", "3", "4", "5"],
-        answer: 1
+        question: "‘ஒ’ எவ்வகை உயிரெழுத்து?",
+        options: ["குறில்", "நெடில்", "மெய்", "ஆய்தம்"],
+        answer: 0
     },
-
     {
-        question: "இறந்த காலத்தை உணர்த்தும் வினைச்சொல் எது?",
-        options: ["படிக்கிறான்", "படித்தான்", "படிப்பான்", "படிப்பவன்"],
-        answer: 1
+        question: "முதல் எழுத்துகள் எனப்படுபவை எவை?",
+        options: ["உயிரும் மெய்யும்", "உயிர்மெய் மட்டும்", "ஆய்தம் மட்டும்", "சார்பெழுத்துகள்"],
+        answer: 0
     },
-
     {
-        question: "நிகழ்காலத்தை உணர்த்தும் வினைச்சொல் எது?",
-        options: ["சென்றான்", "செல்கிறான்", "செல்வான்", "சென்றவன்"],
-        answer: 1
+        question: "சார்பெழுத்துகளில் ஒன்று எது?",
+        options: ["உயிர்மெய்", "உயிர்", "மெய்", "குறில்"],
+        answer: 0
     },
-
     {
-        question: "எதிர்காலத்தை உணர்த்தும் வினைச்சொல் எது?",
-        options: ["வருகிறான்", "வந்தான்", "வருவான்", "வந்தவன்"],
-        answer: 2
+        question: "மொழியின் வளர்ச்சிக்கு முக்கியமானது எது?",
+        options: ["மக்களின் பயன்பாடு", "மொழியைப் பயன்படுத்தாமை", "மொழியை மறத்தல்", "பிறமொழியை மட்டும் பயன்படுத்துதல்"],
+        answer: 0
     },
-
     {
-        question: "ஒரு சொல் பல பொருள்களைத் தருவது எவ்வாறு அழைக்கப்படுகிறது?",
-        options: ["ஒருபொருள் பன்மொழி", "பலபொருள் ஒரு சொல்", "உரிச்சொல்", "இடைச்சொல்"],
-        answer: 1
+        question: "மொழியின் அடிப்படைப் பயன்பாடு எது?",
+        options: ["கருத்துகளைப் பரிமாறுதல்", "விளையாடுதல்", "தூங்குதல்", "பயணம் செய்தல்"],
+        answer: 0
     },
-
     {
-        question: "பல சொற்கள் ஒரே பொருளைத் தருவது எவ்வாறு அழைக்கப்படுகிறது?",
-        options: ["பலபொருள் ஒரு சொல்", "ஒருபொருள் பன்மொழி", "வினைமுற்று", "பெயரெச்சம்"],
-        answer: 1
-    },
-
-    {
-        question: "‘மரம்’ என்பது எந்த வகைச் சொல்?",
-        options: ["வினைச்சொல்", "பெயர்ச்சொல்", "இடைச்சொல்", "உரிச்சொல்"],
-        answer: 1
-    },
-
-    {
-        question: "‘ஓடினான்’ என்பது எந்த வகைச் சொல்?",
-        options: ["பெயர்ச்சொல்", "உரிச்சொல்", "வினைச்சொல்", "இடைச்சொல்"],
-        answer: 2
-    },
-
-    {
-        question: "‘அழகான மலர்’ என்பதில் ‘அழகான’ என்பது எது?",
-        options: ["பெயர்ச்சொல்", "வினைச்சொல்", "உரிச்சொல்", "இடைச்சொல்"],
-        answer: 2
-    },
-
-    {
-        question: "‘மாணவன் பாடம் படித்தான்’ என்பதில் வினைச்சொல் எது?",
-        options: ["மாணவன்", "பாடம்", "படித்தான்", "என்பதில்"],
-        answer: 2
-    },
-
-    {
-        question: "தமிழ் இலக்கணத்தின் முக்கியப் பிரிவுகளில் ஒன்று எது?",
-        options: ["எழுத்து", "கணிதம்", "அறிவியல்", "வரலாறு"],
+        question: "தமிழ்மொழியைப் பாதுகாக்க வேண்டியது யார்?",
+        options: ["அனைவரும்", "ஆசிரியர்கள் மட்டும்", "மாணவர்கள் மட்டும்", "எழுத்தாளர்கள் மட்டும்"],
         answer: 0
     }
-
 ];
 
-// ======================================================
-// Quiz Variables
-// ======================================================
-
 let currentQuestion = 0;
-let score = 0;
-let userAnswers = [];
-let timeLeft = 30 * 60; // 30 நிமிடங்கள்
-let timer;
+let userAnswers = new Array(questions.length).fill(null);
+let studentName = "", examNo = "", studentClass = "";
+let timeLeft = 20 * 60;
+let timerInterval;
 
-// ======================================================
-// HTML Elements
-// ======================================================
+const studentSection = document.getElementById("student-section");
+const quizSection = document.getElementById("quiz-section");
+const resultSection = document.getElementById("result-section");
+const nextBtn = document.getElementById("nextBtn");
+const prevBtn = document.getElementById("prevBtn");
+const nextQuestionBtn = document.getElementById("nextQuestionBtn");
+const submitBtn = document.getElementById("submitBtn");
+const quiz = document.getElementById("quiz");
+const questionNumber = document.getElementById("question-number");
+const timerDisplay = document.getElementById("timer");
+const studentInfo = document.getElementById("studentInfo");
 
-const quizBox = document.getElementById("quiz");
-const nextButton = document.getElementById("next-btn");
-const resultBox = document.getElementById("result");
-const timerBox = document.getElementById("timer");
+nextBtn.addEventListener("click", function () {
+    studentName = document.getElementById("studentName").value.trim();
+    examNo = document.getElementById("examNo").value.trim();
+    studentClass = document.getElementById("studentClass").value.trim();
 
-// ======================================================
-// Timer
-// ======================================================
-
-function startTimer() {
-
-    timer = setInterval(() => {
-
-        let minutes = Math.floor(timeLeft / 60);
-        let seconds = timeLeft % 60;
-
-        if (timerBox) {
-            timerBox.innerHTML =
-                "⏱️ மீதமுள்ள நேரம்: " +
-                minutes + ":" +
-                (seconds < 10 ? "0" : "") +
-                seconds;
-        }
-
-        timeLeft--;
-
-        if (timeLeft < 0) {
-            clearInterval(timer);
-            finishQuiz();
-        }
-
-    }, 1000);
-}
-
-// ======================================================
-// Show Question
-// ======================================================
-
-function showQuestion() {
-
-    if (!quizBox) return;
-
-    const q = questions[currentQuestion];
-
-    let html = "";
-
-    html += `
-        <div class="question-box">
-            <h3>
-                வினா ${currentQuestion + 1} / ${questions.length}
-            </h3>
-
-            <p><strong>${q.question}</strong></p>
-
-            <div class="options">
-    `;
-
-    q.options.forEach((option, index) => {
-
-        html += `
-            <label class="option">
-                <input type="radio"
-                       name="answer"
-                       value="${index}">
-                ${option}
-            </label>
-        `;
-
-    });
-
-    html += `
-            </div>
-        </div>
-    `;
-
-    quizBox.innerHTML = html;
-
-    if (nextButton) {
-        nextButton.innerHTML =
-            currentQuestion === questions.length - 1
-            ? "🏁 தேர்வை முடிக்கவும்"
-            : "➡️ அடுத்த வினா";
-    }
-}
-
-// ======================================================
-// Next Question
-// ======================================================
-
-function nextQuestion() {
-
-    const selected = document.querySelector(
-        'input[name="answer"]:checked'
-    );
-
-    if (!selected) {
-        alert("⚠️ ஒரு விடையைத் தேர்ந்தெடுக்கவும்!");
+    if (!studentName || !examNo || !studentClass) {
+        alert("அனைத்து விவரங்களையும் உள்ளிடுக.");
         return;
     }
 
-    userAnswers[currentQuestion] =
-        Number(selected.value);
+    studentInfo.innerHTML = `👨‍🎓 ${studentName} | தேர்வு எண்: ${examNo} | வகுப்பு: ${studentClass}`;
+    studentSection.classList.add("hidden");
+    quizSection.classList.remove("hidden");
+    startTimer();
+    showQuestion();
+});
 
-    if (
-        userAnswers[currentQuestion] ===
-        questions[currentQuestion].answer
-    ) {
-        score++;
-    }
+function showQuestion() {
+    const q = questions[currentQuestion];
 
-    currentQuestion++;
+    questionNumber.innerHTML = `<h3>வினா ${currentQuestion + 1} / ${questions.length}</h3>`;
 
-    if (currentQuestion < questions.length) {
-        showQuestion();
-    } else {
-        finishQuiz();
-    }
-}
-
-// ======================================================
-// Finish Quiz
-// ======================================================
-
-function finishQuiz() {
-
-    clearInterval(timer);
-
-    if (quizBox) {
-        quizBox.style.display = "none";
-    }
-
-    if (nextButton) {
-        nextButton.style.display = "none";
-    }
-
-    let percentage =
-        Math.round((score / questions.length) * 100);
-
-    let html = "";
-
-    html += `
-        <div class="final-result">
-
-            <h2>🎉 தேர்வு முடிந்தது!</h2>
-
-            <h3>
-                உங்கள் மதிப்பெண்:
-                ${score} / ${questions.length}
-            </h3>
-
-            <h3>
-                📊 சதவீதம்: ${percentage}%
-            </h3>
-
-            <hr>
-
-            <h3>❌ தவறான விடைகளின் சரியான பதில்கள்</h3>
-
-            <div class="wrong-list">
-    `;
-
-    let wrongCount = 0;
-
-    questions.forEach((q, index) => {
-
-        if (userAnswers[index] !== q.answer) {
-
-            wrongCount++;
-
-            html += `
-                <div class="wrong-answer">
-
-                    <p>
-                        <strong>
-                            ${index + 1}. ${q.question}
-                        </strong>
-                    </p>
-
-                    <p>
-                        நீங்கள் தேர்ந்தெடுத்தது:
-                        <span>
-                            ${
-                                userAnswers[index] !== undefined
-                                ? q.options[userAnswers[index]]
-                                : "விடை தேர்ந்தெடுக்கவில்லை"
-                            }
-                        </span>
-                    </p>
-
-                    <p>
-                        ✅ சரியான விடை:
-                        <strong>
-                            ${q.options[q.answer]}
-                        </strong>
-                    </p>
-
-                </div>
-            `;
-        }
-
-    });
-
-    if (wrongCount === 0) {
-
-        html += `
-            <h3>
-                🏆 அருமை! அனைத்து வினாக்களுக்கும்
-                சரியான விடை அளித்துள்ளீர்கள்!
-            </h3>
-        `;
-
-    }
-
-    html += `
+    quiz.innerHTML = `
+        <div class="question-card">
+            <h2>${q.question}</h2>
+            <div class="options">
+                ${q.options.map((option, index) => `
+                    <label class="option">
+                        <input type="radio" name="answer" value="${index}"
+                            ${userAnswers[currentQuestion] === index ? "checked" : ""}>
+                        <span>${String.fromCharCode(65 + index)}. ${option}</span>
+                    </label>
+                `).join("")}
             </div>
-
-            <br>
-
-            <button onclick="location.reload()">
-                🔄 மீண்டும் தேர்வு எழுதுக
-            </button>
-
         </div>
     `;
 
-    if (resultBox) {
-        resultBox.innerHTML = html;
-        resultBox.style.display = "block";
-    }
+    updateButtons();
+
+    document.querySelectorAll('input[name="answer"]').forEach(radio => {
+        radio.addEventListener("change", function () {
+            userAnswers[currentQuestion] = parseInt(this.value);
+        });
+    });
 }
 
-// ======================================================
-// Start Quiz
-// ======================================================
+function updateButtons() {
+    prevBtn.style.display = currentQuestion === 0 ? "none" : "inline-block";
+    nextQuestionBtn.classList.toggle("hidden", currentQuestion === questions.length - 1);
+    submitBtn.classList.toggle("hidden", currentQuestion !== questions.length - 1);
+}
 
-document.addEventListener("DOMContentLoaded", () => {
-
-    showQuestion();
-    startTimer();
-
-    if (nextButton) {
-        nextButton.addEventListener(
-            "click",
-            nextQuestion
-        );
+nextQuestionBtn.addEventListener("click", function () {
+    if (userAnswers[currentQuestion] === null) {
+        alert("முதலில் ஒரு விடையைத் தேர்ந்தெடுக்கவும்.");
+        return;
     }
 
+    currentQuestion++;
+    showQuestion();
+    window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+prevBtn.addEventListener("click", function () {
+    if (currentQuestion > 0) {
+        currentQuestion--;
+        showQuestion();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+});
+
+submitBtn.addEventListener("click", function () {
+    const unanswered = userAnswers.filter(answer => answer === null).length;
+
+    if (unanswered && !confirm(`இன்னும் ${unanswered} வினாக்களுக்கு விடை அளிக்கவில்லை.\n\nதேர்வைச் சமர்ப்பிக்க வேண்டுமா?`)) {
+        return;
+    }
+
+    finishQuiz();
+});
+
+function startTimer() {
+    updateTimer();
+
+    timerInterval = setInterval(function () {
+        timeLeft--;
+        updateTimer();
+
+        if (timeLeft <= 0) {
+            clearInterval(timerInterval);
+            alert("⏰ நேரம் முடிந்துவிட்டது!\nதேர்வு தானாகச் சமர்ப்பிக்கப்படுகிறது.");
+            finishQuiz();
+        }
+    }, 1000);
+}
+
+function updateTimer() {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+
+    timerDisplay.textContent =
+        `⏱️ ${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+}
+
+function finishQuiz() {
+    clearInterval(timerInterval);
+
+    const score = questions.reduce(
+        (total, q, index) => total + (userAnswers[index] === q.answer ? 1 : 0),
+        0
+    );
+
+    const percentage = Math.round((score / questions.length) * 100);
+
+    quizSection.classList.add("hidden");
+    resultSection.classList.remove("hidden");
+
+    document.getElementById("resultInfo").innerHTML = `
+        <p><strong>👨‍🎓 மாணவர் பெயர்:</strong> ${studentName}</p>
+        <p><strong>📝 தேர்வு எண்:</strong> ${examNo}</p>
+        <p><strong>🏫 வகுப்பு:</strong> ${studentClass}</p>
+    `;
+
+    document.getElementById("score").innerHTML = `
+        <div class="score-box">
+            <h2>🏆 உங்கள் மதிப்பெண்</h2>
+            <h1>${score} / ${questions.length}</h1>
+            <h3>${percentage}%</h3>
+        </div>
+    `;
+
+    showWrongAnswers();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function showWrongAnswers() {
+    const wrongContainer = document.getElementById("wrongAnswers");
+    const wrongQuestions = questions
+        .map((q, index) => userAnswers[index] !== q.answer ? index : -1)
+        .filter(index => index !== -1);
+
+    if (!wrongQuestions.length) {
+        wrongContainer.innerHTML = `
+            <div class="correct-message">
+                🎉 அருமை! அனைத்து வினாக்களுக்கும் சரியான விடை அளித்துள்ளீர்கள்!
+            </div>
+        `;
+        return;
+    }
+
+    wrongContainer.innerHTML = `
+        <h3>❌ தவறான விடைகளின் சரியான பதில்கள்</h3>
+        ${wrongQuestions.map(index => {
+            const q = questions[index];
+            const selected = userAnswers[index] === null
+                ? "விடை அளிக்கவில்லை"
+                : q.options[userAnswers[index]];
+
+            return `
+                <div class="wrong-card">
+                    <p><strong>வினா ${index + 1}:</strong> ${q.question}</p>
+                    <p>❌ <strong>உங்கள் விடை:</strong> ${selected}</p>
+                    <p>✅ <strong>சரியான விடை:</strong> ${q.options[q.answer]}</p>
+                </div>
+            `;
+        }).join("")}
+    `;
+}
+
+document.getElementById("printBtn").addEventListener("click", () => window.print());
+document.getElementById("restartBtn").addEventListener("click", () => location.reload());
